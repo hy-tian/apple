@@ -1,0 +1,96 @@
+.hbanner{
+	display: flex;
+}
+.hbanner .banner{
+	flex: 1;
+	text-align: center;
+}
+.hbanner .banner:nth-child(1){
+	margin: 10px 5px 10px 10px;
+	background-image: url(../img/hbanner1.jpg);
+	background-size: auto 100%;
+	background-color: #000000;
+	background-position: center;
+	outline: none;
+	background-repeat: no-repeat;
+}
+.hbanner .banner:nth-child(2){
+	margin: 10px 10px 10px 5px;
+	background-image: url(../img/hbanner2.jpg);
+	background-size: auto 100%;
+	background-color: #fbfbfb;
+	background-position: center;
+	outline: none;
+	background-repeat: no-repeat;
+}
+.hbanner .banner:nth-child(1) h1{
+	margin-top: 42px;
+	color: #fff;
+	font-size: 32px;
+	line-height: 1.125;
+	font-weight: 600;
+	letter-spacing: .002em;
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.hbanner .banner:nth-child(1) h2{
+	color: #fff;
+	margin-top: 6px;
+	font-size: 19px;
+	line-height: 1.21053;
+	font-weight: 400;
+	letter-spacing: .012em;
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.hbanner .link a{
+	font-size: 17px;
+	line-height: 1.23536;
+	color: #2997ff;
+	font-weight: 400;
+	letter-spacing: -.022em;
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.hbanner .link a:hover{
+	text-decoration: underline;
+}
+.hbanner .link{
+	margin-top: 20px;
+	color: #2997ff;
+	font-family: "SF Pro Icons";
+}
+.hbanner .link a:nth-child(3){
+	margin-left: 26px;
+}
+.hbanner .banner:nth-child(2) h1{
+	font-size: 32px;
+	line-height: 1.125;
+	font-weight: 600;
+	letter-spacing: .002em;
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.hbanner .banner:nth-child(2) h2{
+	margin-top: 10px;
+	text-align: center;
+	font-size: 19px;
+	line-height: 1.21053;
+	font-weight: 400;
+	letter-spacing: .012em;
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+@media only screen and (max-width:1100px) {
+	.banner{
+		height: 500px;
+	}
+}
+@media only screen and (max-width:740px) {
+	.banner{
+		height: 400px;
+		background-size: 80%;
+	}
+	.hbanner{
+		display: block;
+	}
+	.hbanner .banner:nth-child(1),.banner:nth-child(2){
+		width: calc(100%-20px);
+		margin: 10px;
+	}
+}
